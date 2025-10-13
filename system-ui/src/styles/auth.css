@@ -1,0 +1,99 @@
+/* Page frame */
+.auth-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f8;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 400px;
+  max-width: 92vw;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  padding: 28px 28px 22px;
+}
+
+.auth-title {
+  margin: 4px 0 18px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Form */
+.auth-form { display: grid; gap: 12px; }
+
+.auth-label {
+  font-size: 14px;
+  color: #374151;
+  display: grid;
+  gap: 6px;
+}
+
+.auth-input {
+  height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: #fff;
+}
+.auth-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* Button */
+.auth-btn {
+  height: 44px;
+  margin-top: 6px;
+  border: 0;
+  border-radius: 10px;
+  background: #2563eb;      /* blue */
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+.auth-btn:hover { background: #1e51c7; }
+.auth-btn:active { transform: translateY(1px); }
+
+/* Link row */
+.auth-link-row {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #4b5563;
+}
+.auth-link-row a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.auth-link-row a:hover { text-decoration: underline; }
+
+/* Small “Advanced (demo)” area for your role/id switches */
+.auth-adv-toggle {
+  display: inline-block;
+  margin: 12px 0 0;
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 13px;
+}
+.auth-adv {
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed #e5e7eb;
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+}
+.auth-row { display: flex; gap: 8px; align-items: center; }
+.auth-row input[type="text"] { flex: 1; }
